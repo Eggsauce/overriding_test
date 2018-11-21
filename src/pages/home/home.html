@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <button ion-button (click)="getData()">Get Data</button>
+  <ion-row>Name :{{result.FirstName}}</ion-row>
+  <ion-row>User Gender :{{result.Gender}}</ion-row>
+  <ion-row>User Email :{{result.UserEmail}}</ion-row>
+  <ion-row>User Bank Name :{{result.BankName}}</ion-row>
+  <ion-row>User Mobile No :{{result.MobileNo}}</ion-row>
+
+    <ion-list>
+
+        <ion-item>
+          <ion-label floating>Username</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+      
+        <div padding>
+            <button block>Sign In</button>
+          </div>
+          
+      </ion-list>
+
+ <h1>Welcome</h1>
+  <input [(ngModel)] ="myInput" type="text">
+  <p>{{myInput}}</p>
+  <a [href]="myLink">YouTube</a>
+
+  <button secondary menuToggle>Toggle Menu</button>
+  <button ion-button secondary menuToggl (click)="fourofour()">Danger</button>
+  <button ion-button secondary menuToggl (click)="drimglobal()">Display</button>
+  <img [src]="myImage">
+
+  <button ion-button color="danger">Danger</button>
+</ion-content>
